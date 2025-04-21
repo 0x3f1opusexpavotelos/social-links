@@ -1,0 +1,16 @@
+{
+  "name": "social-links",
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "format": "prettier . --write",
+    "lint": "eslint .",
+    "build": "npm run lint && vite build",
+    "preview": "vite preview",
+    "start": "vite dev"
+  },
+  "author": "spike",
+  "devDependencies": {
+    "vite": "^6.3.2"
+  }
+}

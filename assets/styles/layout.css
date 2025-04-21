@@ -1,0 +1,35 @@
+body.grid {
+  width: 100%;
+  min-height: 480px;
+  overflow-y: scroll;
+  margin: 0px auto;
+  text-align: center;
+  grid-template-areas:
+    "header"
+    "main"
+    "nav"
+    "footer";
+  grid-template-columns: 1fr;
+  grid-template-rows: max-content 2fr 1fr max-content;
+}
+
+
+
+dialog form,
+dialog article {
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+dialog form {
+  text-align: left;
+  min-width: 50%;
+  max-width: 100%;
+}
+
+dialog article {
+  min-height: fit-content;
+  max-height: 100vh;
+  padding-top: 1em;
+  padding-bottom: 0.5em;
+}

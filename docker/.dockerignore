@@ -1,0 +1,30 @@
+# git
+.git
+.github
+.gitignore
+
+
+# docker
+.dockerignore
+docker-compose*
+compose*
+
+
+# editor
+.idea
+.vscode
+**/.DS_Store
+
+# document 
+
+README*
+LICENSE*
+CONTRIBUTING*
+
+
+# keep only essentail files for static site deployment
+!index.html
+!styles/
+!images/
+!icons/
+!fonts/

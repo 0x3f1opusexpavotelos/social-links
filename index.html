@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- aid user agents stylesheet(default look and feel of a page) in rendering the page background with prefer theme -->
+  <meta name="color-scheme" content="dark light">
+  <!-- meta -->
+  <title> Social Links</title>
+  <link rel="icon" type="image/png" href="images/avatar.png">
+  <meta name="description" content="Find me on ... ">
+  <meta name="author" content="spike">
+  <!-- fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,800&display=swap" rel="stylesheet">
+  <!-- css -->
+
+  <link rel="stylesheet" type="text/css" href="./assets/styles/reset.css">
+  <link rel="stylesheet" type="text/css" href="./assets/styles/skeleton-light.css">
+  <link rel="stylesheet" type="text/css" href="./assets/styles/brand.css">
+
+
+
+</head>
+
+<body>
+  <header>
+    <div class="container">
+      <nav>
+        <a aria-label="avatar" href="/"></a>
+        <ul>
+          <li>
+            <label>
+              <input type="checkbox" id="theme-toggle" checked name="toggle" role="switch">
+            </label>
+          </li>
+          <li>
+
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <aside>
+      <article id="take-selfie">
+        <div class="modal-content">
+          <canvas id="preview" width="320" height="240"></canvas>
+          <button id="save-photo">Save photo</button>
+        </div>
+      </article>
+      <canvas id="selfie"></canvas>
+    </aside>
+
+
+
+    <div class="row" id="content">
+      <div class="column">
+        <img class="avatar avatar--rounded" src="/src/images/avatar.png" srcset="images/avatar@2x.png 2x"
+          alt="spike avatar">
+
+        <div class="button-stack" role="navigation"></div>
+        <a href="#" class="button button-github">
+          <img class="icon" src="icons/github.svg" alt="">github
+        </a>
+
+        <a href="#" class=" button button-github">
+          <img class="icon" src="icons/github.svg" alt="">Visit portfolio
+        </a>
+
+        <a href="#" class=" button button-github">
+          <img class="icon" src="icons/github.svg" alt="">Read my blog
+        </a>
+        <a class="button button-github" href="mailto:hack.xiyuan@gmail.com">
+          <img class="icon" src="icons/github.svg" alt="">Email me
+        </a>
+      </div>
+
+      <footer>
+        <a href=""></a>
+      </footer>
+    </div>
+  </main>
+
+  <!-- <script id="theme.js">
+    /**
+     * attach an event handler to the #toggle checkbox
+     * grab the html element, read the current date-theme attribute
+     * get the current theme
+     * figure out what the new theme should be
+     * change the data-theme to newTheme
+     */
+
+    function toggleTheme() {
+      const doc = document.documentElement;
+      const currentTheme = doc.getAttribute('data-theme')
+      // branch logic (condition) ? 'if block' : 'else block'
+      const newTheme = currentTheme === 'dark' ? 'light' : 'dark'
+      doc.setAttribute('data-theme', newTheme)
+    }
+
+    const toggle = document.querySelector('#toggle')
+    toggle.addEventListener('change', toggleTheme)
+    /**
+     * const today = new Date()
+     * console.log(today.toDateString())
+     * console.log(today.toLocalDateString())
+     * console.log(Date.now())
+     */
+  </script> -->
+
+
+
+
+  <script type="module" src="/main.js"></script>
+
+
+</body>
+
+</html>

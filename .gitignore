@@ -1,0 +1,31 @@
+# deps and dist
+/node_modules
+static
+
+
+# Generated files
+
+
+# IDE and system files
+.idea
+.vscode
+**/.DS_Store
+.tmp
+.history
+
+
+# misc
+
+
+
+
+
+
+# secrets and env (can opt-in for committing if needed)
+*.pem
+.env
+.env*.local
+.env.development.local
+.env.ci.local
+.env.production.local
+!.env.examplev

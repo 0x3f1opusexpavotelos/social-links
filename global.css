@@ -1,0 +1,109 @@
+@layer framework, base, components, utilities;
+
+@import url("https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css") layer(framework);
+
+[data-theme=light],
+:root:not([data-theme=dark]) {
+  color-scheme: light;
+}
+
+@media only screen and (prefers-color-scheme: dark) {
+  :root:not([data-theme]) {
+    color-scheme: dark;
+  }
+}
+
+[data-theme=dark] {
+  color-scheme: dark
+}
+
+:root {
+  --c-gray-100: #fdfdfc;
+  --c-gray-200: #f9f9f8;
+  --c-gray-300: #f1f0ef;
+  --c-gray-400: #e9e9e7;
+  --c-gray-500: #e2e1de;
+  --c-gray-600: #dad9d6;
+  --c-gray-700: #cfceca;
+  --c-gray-800: #bcbbb5;
+  --c-gray-900: #8d8d86;
+  --c-gray-1000: #82827c;
+  --c-gray-1100: #43423d;
+  --c-gray-1200: #21201c;
+
+  --c-yellow: #fcba28;
+  --c-green: #0ba95b;
+  --c-brand: #fcba28;
+  --c-brand-charcoal: #231f20;
+  --accent: var(--c-yellow);
+
+  --popover-index: 9;
+  --modal-index: 100;
+  --mobileNavbar: 1000;
+  --top-announcement: 1000;
+  --top-nav-index: 1000;
+}
+
+
+@layer base {
+  :root {
+    --form-elem-border-color: var(--form-elem-bg-color);
+    --form-elem-active-bg-color: var(--form-elem-bg-color);
+    --form-elem-focus-border: var(--c-brand);
+    --form-elem-focus-box-shadow: 0 0 0.625rem var(--c-brand);
+    --form-elem-text-color: #e0e3e7;
+    --form-elem-bg-color: #1C212C;
+  }
+}
+
+@layer component {
+
+  :root {
+    --switch-bg-color: #bfc7d9;
+    --switch-text-color: #fff;
+    /* #13161E */
+    --card-bg-color: #181c25;
+
+  }
+
+
+}
+
+
+.container {
+  width: 100%;
+  margin-inline: auto;
+}
+
+
+@media (min-width:576px) {
+  .container {
+    max-width: 510px;
+    padding-right: 0;
+    padding-left: 0
+  }
+}
+
+@media (min-width:768px) {
+  .container {
+    max-width: 700px
+  }
+}
+
+@media (min-width:1024px) {
+  .container {
+    max-width: 950px
+  }
+}
+
+@media (min-width:1280px) {
+  .container {
+    max-width: 1200px
+  }
+}
+
+@media (min-width:1536px) {
+  .container {
+    max-width: 1450px
+  }
+}
