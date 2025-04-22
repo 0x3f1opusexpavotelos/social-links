@@ -4,7 +4,7 @@ import { defineConfig } from "vite"
 
 
 export default defineConfig({
-  base: '/social-links',
+  base: '/',
   server: {
     port: 1234
   },
