@@ -1,4 +1,8 @@
 
+rent server for host static page, SPA, API, cli,
+
+CDN for batch and automated script
+
 ```bash
 npm install -g swagger-ui-watcher
 npx node-modules-inspector
