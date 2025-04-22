@@ -1,7 +1,15 @@
-FROM nginx:alpine
 
 
+FROM node:lts as builder
+WORKDIR /app
+COPY package*.json ./
+RUN npm install
+COPY . .
+RUN npm run build
 
 
-# ENTRYPOINT [ "./pm2-start.sh" ]
-# CMD [ "8000" ]
+FROM nginx:1.27.4-alpine-slim
+COPY --from=builder /app/static /usr/share/nginx/html
+COPY ./nginx.conf /etc/nginx/conf.d/default.conf
+
+

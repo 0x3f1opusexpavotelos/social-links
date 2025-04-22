@@ -22,9 +22,12 @@ LICENSE*
 CONTRIBUTING*
 
 
+node_modules
+
 # keep only essentail files for static site deployment
-!index.html
-!styles/
-!images/
-!icons/
-!fonts/
+# !index.html
+# !styles/
+# !images/
+# !icons/
+# !fonts/
+!static/**

@@ -3,8 +3,17 @@ servies:
     build:
       context: .
       dockerfile: dockerfile
+    container_name: social-nginx
     ports:
-      - "8080:80"
+      - 8080:80
+      - 444:443
     volumes:
-      - ..:/usr/share/nginx/html
+      # - ./static:/usr/share/nginx/html:ro
+      # - ./nginx.conf:/etc/nginx/conf.d/default.conf:ro
     restart: unless-stopped
+    networks:
+      - social
+
+networks:
+  social:
+    external: true
