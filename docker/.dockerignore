@@ -22,7 +22,7 @@ LICENSE*
 CONTRIBUTING*
 
 
-node_modules
+**/node_modules
 
 # keep only essentail files for static site deployment
 # !index.html

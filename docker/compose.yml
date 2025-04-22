@@ -1,8 +1,8 @@
 servies:
   web:
     build:
-      context: .
-      dockerfile: dockerfile
+      context: ..
+      dockerfile: docker/Dockerfile
     container_name: social-nginx
     ports:
       - 8080:80

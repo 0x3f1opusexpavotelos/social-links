@@ -27,7 +27,7 @@ jobs:
         run: |
 
           # Build the Docker image
-          docker build -t ${{ vars.DOCKERHUB_USERNAME }}/social-links:latest -f Dockerfile ./docker
+          docker build -t ${{ vars.DOCKERHUB_USERNAME }}/social-links:latest -f docker/Dockerfile .
 
           # Push the Docker image to Docker Hub
           docker push ${{ vars.DOCKERHUB_USERNAME }}/social-links:latest

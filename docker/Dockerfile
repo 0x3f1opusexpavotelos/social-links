@@ -1,6 +1,6 @@
 
 
-FROM node:lts as builder
+FROM node:lts AS builder
 WORKDIR /app
 COPY package*.json ./
 RUN npm install
@@ -10,6 +10,6 @@ RUN npm run build
 
 FROM nginx:1.27.4-alpine-slim
 COPY --from=builder /app/static /usr/share/nginx/html
-COPY ./nginx.conf /etc/nginx/conf.d/default.conf
+COPY docker/nginx.conf /etc/nginx/conf.d/default.conf
 
 
